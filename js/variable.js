@@ -35,9 +35,16 @@ function main() {
   console.log("10" != 10);
   console.log("10"!==10);
 
-  let count; // undefined
+  let count; // undefined -> false취급
   console.log(count);
   let count2 = null;
-  console.log(count2);
+  console.log(count2); // 역시 false취급
+  
+  if(!!count) {
+    console.log("값 없음");
+  }
+  if(!count) {
+    console.log("값 있음");
+  }
 }
 
